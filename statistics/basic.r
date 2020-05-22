@@ -1,3 +1,5 @@
+# HSG GasaGGI
+
 # 중심극한정리 시뮬레이션
 par(mfrow = c(1, 2))
 no <- 30
