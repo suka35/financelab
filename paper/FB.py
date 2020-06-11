@@ -10,9 +10,9 @@ import QuantLib as ql
 
 ### Common Variable
 
-zeta_s = 1                 # 불확실성을 나타내는 Brownian motion (측도 P에서 정의)
-zeta_1 = 1                 # 불확실성을 나타내는 Brownian motion (측도 P에서 정의)
-zeta_2 = 1                 # 불확실성을 나타내는 Brownian motion (측도 P에서 정의)
+# zeta_s = 1                 # 불확실성을 나타내는 Brownian motion (측도 P에서 정의)
+# zeta_1 = 1                 # 불확실성을 나타내는 Brownian motion (측도 P에서 정의)
+# zeta_2 = 1                 # 불확실성을 나타내는 Brownian motion (측도 P에서 정의)
 
 
 sigma_s = 1                # 국내 주가지수 수익률의 변동성
@@ -30,7 +30,7 @@ I = 1                      # 국내 주가지수(또는 대표주식)
 r = 1                      # 국내 단기이자율
 r_f = 1                    # 해외 단기이자율
 P(t,T) = 1                 # 만기 T인 t시점의 국내 할인채권가격
-P_f(t,T) = 1               # 만기 T인 t시점의 해외 할인채권가격(해외통화로 표시)
+Pf(t,T) = 1               # 만기 T인 t시점의 해외 할인채권가격(해외통화로 표시)
 (P_f(t,T))**d = 1          # 해외 채권을 환율을 곱하여 국내화폐가치로 환산한 할인채권가격
 S[t] = 1                   # t시점의 환율, 즉 해외화폐 1단위당 국내가격
 prime() = matrix([[1,2,3],[10,20,30]])   # 전치행렬
