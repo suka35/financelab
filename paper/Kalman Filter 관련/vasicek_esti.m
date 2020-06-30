@@ -4,14 +4,14 @@ clc;
 % 1 factor Vasicek의 모수를 추정하는 알고리즘
 t0 = clock;           % 계산 시간을 재기위해 시작 시간을 측정
 
-load 'data7.mat' % yield data를 불러옴(변수 z)
-z=data1/100;
+load 'data8.mat' % yield data를 불러옴(변수 z)
+z=kbond/100;
 %initial value-----------------------------------------------------------%
 
-ia = 0.14;  %스피드 
-irbar=0.04;   %장기평균
-isigma =0.03; %수익률의 표준편차
-iu= -0.16;  % Market Price of Risk
+ia = 0.14;  %스피드 kappa
+irbar=0.04;   %장기평균 theta
+isigma =0.03; %수익률의 표준편차 sigma
+iu= -0.16;  % Market Price of Risk lambda
 
 %------------------------------------------------------------------------%
 InitialParams = [(ia) (irbar) (isigma) iu]; %여기서 log를 취한 이유는 parameter 값이 양수로 제약을 주기 위함.
